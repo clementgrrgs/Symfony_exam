@@ -27,7 +27,7 @@ class Answers
     private $status;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\questions", inversedBy="answers")
+     * @ORM\ManyToOne(targetEntity="App\Entity\questions", inversedBy="answers",  cascade={"persist"})
      */
     private $question_id;
 

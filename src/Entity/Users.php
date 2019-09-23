@@ -24,7 +24,7 @@ class Users
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Questions", mappedBy="user_id")
+     * @ORM\OneToMany(targetEntity="App\Entity\Questions", mappedBy="user_id",  cascade={"persist"})
      */
     private $questions;
 

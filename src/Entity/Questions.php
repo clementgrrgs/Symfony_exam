@@ -29,12 +29,12 @@ class Questions
     private $content;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\users", inversedBy="questions")
+     * @ORM\ManyToOne(targetEntity="App\Entity\users", inversedBy="questions",  cascade={"persist"})
      */
     private $user_id;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Answers", mappedBy="question_id")
+     * @ORM\OneToMany(targetEntity="App\Entity\Answers", mappedBy="question_id",  cascade={"persist"})
      */
     private $answers;
 
