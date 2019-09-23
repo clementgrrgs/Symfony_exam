@@ -29,7 +29,7 @@ class Questions
     private $content;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\users", inversedBy="questions",  cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="App\Entity\Users", inversedBy="questions",  cascade={"persist"})
      */
     private $user_id;
 
